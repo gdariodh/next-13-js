@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
+
 const links = [
   {
     label: "Home",

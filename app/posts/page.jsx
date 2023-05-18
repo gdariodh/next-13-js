@@ -1,5 +1,10 @@
 import React from "react";
+import ListOfPost from "./ListOfPost";
 
-export default function page() {
-  return <div>Aqui mostramos los posts..</div>;
+export default async function page() {
+  return (
+    <section>
+      <ListOfPost />
+    </section>
+  );
 }
