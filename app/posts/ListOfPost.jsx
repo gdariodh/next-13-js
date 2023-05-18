@@ -3,6 +3,18 @@ import Link from "next/link";
 import LikeButton from "./LikeButton";
 
 const fetchPosts = () => {
+  /**  getStaticProps
+    return fetch("https://jsonplaceholder.typicode.com/posts").then((response) =>
+    response.json()
+  );
+   */
+
+  /** getServerSideProps
+    return fetch("https://jsonplaceholder.typicode.com/posts", {
+    cache: "no-store",
+  }).then((response) => response.json());
+   */
+
   // incremental static regeneration
   return fetch("https://jsonplaceholder.typicode.com/posts", {
     next: {
