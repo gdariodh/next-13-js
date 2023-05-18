@@ -14,6 +14,8 @@ export default async function Post({ children, params }) {
   const { id } = params;
   const post = await fetchSinglePost(id);
 
+  // TODO: YOUTUBE VIDEO -> 1:14:05 -> https://www.youtube.com/watch?v=tA-_vAz9y78
+
   return (
     <article>
       <h1>{post.title}</h1>
