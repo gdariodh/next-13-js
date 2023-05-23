@@ -2,6 +2,7 @@ import React from "react";
 
 const fetchComments = async (id) => {
   await new Promise((resolve) => setTimeout(resolve, 3000));
+  throw new Error("Error al cargar los comentarios");
 
   // incremental static regeneration
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
